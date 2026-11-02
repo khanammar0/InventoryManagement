@@ -163,45 +163,6 @@ ROP = Avg Daily Demand × Lead Time + Safety Stock
 
 ---
 
-## 🌐 Deployment
-
-### Deploy to Streamlit Community Cloud (Recommended)
-1. Push code to GitHub (remove `.env` first — see Security below)
-2. Go to https://share.streamlit.io
-3. Click "New app"
-4. Select this GitHub repository
-5. Set main file to `app.py`
-6. Add secrets:
-   - Go to **Advanced settings** → **Secrets**
-   - Add: `GROQ_API_KEY = your_key_here`
-7. Click Deploy
-
-### Deploy to Render / Railway / Heroku
-Instructions for other platforms available on request.
-
----
-
-## 🔐 Security & Best Practices
-
-⚠️ **Never commit `.env` file to GitHub!**
-
-### Before Pushing to GitHub:
-1. Remove the `.env` file from Git history:
-   ```bash
-   git rm --cached .env
-   echo ".env" >> .gitignore
-   git add .gitignore
-   git commit -m "Remove .env from tracking"
-   ```
-
-2. Push changes:
-   ```bash
-   git push -u origin main
-   ```
-
-3. On the deployment platform, set `GROQ_API_KEY` as an environment variable (never hardcode it).
-
----
 
 ## 📊 Sample Data
 
@@ -255,11 +216,6 @@ This project is open-source. Use freely for educational and commercial purposes.
 
 ---
 
-## 👤 Author
-
-**Yuvraj Singh** — B.Tech 2nd Year Project
-
----
 
 ## 📞 Support
 
@@ -268,6 +224,3 @@ For questions or issues:
 - Review [Groq API documentation](https://console.groq.com/docs)
 - Open an issue on GitHub
 
----
-
-**Happy Inventory Managing! 📦**
